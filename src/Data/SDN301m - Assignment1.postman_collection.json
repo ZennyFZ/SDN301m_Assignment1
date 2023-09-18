@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "8a4064da-651a-4feb-8fb3-0ab2fad6d786",
+		"name": "SDN301m - Assignment1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24148397"
+	},
+	"item": [
+		{
+			"name": "Get All Nations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/nations",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"nations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Nation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/nations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"nations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post New Nation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country\": \"Vietnam5\",\r\n    \"code\": \"VN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/nations",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"nations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Nation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country\": \"Vietnam22\",\r\n    \"code\": \"VNVoDich\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/nations/20",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"nations",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Nation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/nations/10",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"nations",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Unsupported Method (Nation)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/nations",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"nations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Players",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/players",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Player",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/players/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"players",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post New Player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Cong Phuong\",\r\n    \"age\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/players",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Player",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nguyen Cong Phuong\",\r\n    \"age\": 29\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/players/11",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"players",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Player",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/players/11",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"players",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Unsupported Method (Player)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/players",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
