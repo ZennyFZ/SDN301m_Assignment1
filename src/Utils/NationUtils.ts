@@ -42,6 +42,11 @@ const updateNationData = (nationId: number, newNation: Nation) => {
     }
 }
 
+// const nukeNationData = () => {
+//     fs.writeFileSync(nationDataPath, JSON.stringify([]))
+//     return 'Nation data nuked'
+// }
+
 const deleteNationData = (nationId: number) => {
     const nationIndex = findNationData(nationId)
     if(nationIndex != -1) {
